@@ -1,11 +1,12 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 //Initializing appcontext
 export const AppContext=createContext();
 
 //create appcontext provider functions
 
 const AppContextProvider=(props)=>{
-
+    const [userData,setUserDate]=useState(null);
+    const [chatData,setChatData]=useState(null);
 
     const value={
         //Here we will add the values 
